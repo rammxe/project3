@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="Random Number" />
+    <meta property="og:description" content="자신있으면 맞춰봐!" />
+    <meta property="og:image" content="Image/15457.jpg" />
+    <link rel="stylesheet" href="css/style (1).css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap"
+      rel="stylesheet"
+    />
+    <title>숫자 맞추기 게임</title>
+  </head>
+  <body>
+    <!-- 파티클 효과용 컨테이너 -->
+    <div id="particleContainer"></div>
+
+    <!-- 게임오버 모달 -->
+    <div id="gameoverModal" class="modal">
+      <div class="modal-content">
+        <h2>다시 하시겠습니까?</h2>
+        <div class="modal-buttons">
+          <button class="modal-btn yes-btn">YES</button>
+          <button class="modal-btn no-btn">NO</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 게임기 배경 위에 모든 요소 -->
+    <div id="gameContainer">
+      <!-- 시작 화면 배경 이미지 -->
+      <img src="img/bg1.gif" alt="시작 배경" class="start-background" />
+
+      <!-- PC용 게임 화면 배경 이미지 (처음엔 숨김) -->
+      <img
+        src="img/gamee.png"
+        alt="게임기"
+        class="game-background game-background-pc"
+        style="display: none"
+      />
+
+      <!-- 모바일/태블릿용 게임 화면 배경 이미지 (처음엔 숨김) -->
+      <img
+        src="img/game_co.png"
+        alt="게임기"
+        class="game-background game-background-mobile"
+        style="display: none"
+      />
+
+      <!-- 게임 컨텐츠 -->
+      <div id="gameContent">
+        <!-- 시작 화면 -->
+        <div id="startScreen">
+          <h1>Number Guessing <br />Game</h1>
+          <button id="startGameBtn" class="pixel-button">▶ START</button>
+        </div>
+
+        <!-- 게임 플레이 화면 (처음엔 숨김) -->
+        <div id="playScreen" style="display: none">
+          <div id="game-text">START</div>
+          <div id="chance">❤️ ❤️ ❤️ ❤️ ❤️</div>
+
+          <div class="inputArea">
+            <input id="inputNumber" type="number" placeholder="1~100" />
+            <button class="go-button">GO!</button>
+          </div>
+
+          <button class="reset-button">RESET</button>
+
+          <!-- 태블릿/모바일용 버튼 컨테이너 -->
+          <div class="button-container">
+            <button class="go-button-circle">GO</button>
+            <button class="reset-button-circle">↻</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/custom2.js"></script>
+  </body>
+</html>
