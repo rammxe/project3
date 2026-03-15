@@ -1047,7 +1047,7 @@ body {
   }
 
   #game-text {
-    font-size: 36px !important;
+    font-size: 30px !important;
     min-height: 80px;
     text-shadow:
       3px 3px 0px rgba(0, 0, 0, 0.5),
@@ -1259,7 +1259,7 @@ body {
   .inputArea {
     max-width: 500px;
     gap: 15px;
-    margin: 24px auto;
+    margin: 10px auto;
   }
 
   #inputNumber {
@@ -1278,7 +1278,7 @@ body {
 
   .go-button {
     width: 120px;
-    height: 78px;
+    height: 70px;
     font-size: 30px !important;
     border-radius: 9px;
     flex-shrink: 0;
@@ -1302,9 +1302,9 @@ body {
   .reset-button {
     width: 100%;
     max-width: 260px;
-    height: 78px;
+    height: 70px;
     font-size: 30px !important;
-    margin-top: 18px;
+    margin-top: 5px;
     border-radius: 9px;
     box-shadow:
       0 4px 0 #c44444,
