@@ -1047,7 +1047,7 @@ body {
   }
 
   #game-text {
-    font-size: 30px !important;
+    font-size: 28px !important;
     min-height: 80px;
     text-shadow:
       3px 3px 0px rgba(0, 0, 0, 0.5),
