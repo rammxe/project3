@@ -7,7 +7,7 @@
 body {
   width: 100%;
   height: 100vh;
-  font-family: "Black Han Sans", sans-serif;
+  font-family: 'Black Han Sans', sans-serif;
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -74,7 +74,7 @@ body {
 
 #startScreen h1 {
   font-size: 8rem;
-  font-family: "Handjet", sans-serif;
+  font-family: 'Handjet', sans-serif;
   font-weight: bold;
   color: #1a1a4d;
   text-align: center;
@@ -101,7 +101,7 @@ body {
 }
 
 .pixel-button {
-  font-family: "Black Han Sans", sans-serif;
+  font-family: 'Black Han Sans', sans-serif;
   background: linear-gradient(135deg, #00d4ff, #0099ff);
   color: white;
   cursor: pointer;
@@ -127,7 +127,7 @@ body {
 }
 
 .pixel-button::before {
-  content: "";
+  content: '';
   position: absolute;
   top: -2px;
   left: -2px;
@@ -199,7 +199,7 @@ body {
 
 #game-text {
   font-size: 4rem;
-  font-family: "Sixtyfour", sans-serif;
+  font-family: 'Sixtyfour', sans-serif;
   font-weight: bold;
   color: #fff;
   display: flex;
@@ -213,7 +213,9 @@ body {
 #game-text.start {
   animation: shake 0.8s ease-in-out infinite;
   color: #00d4ff;
-  text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.5), 0 0 30px rgba(0, 212, 255, 0.8);
+  text-shadow:
+    4px 4px 0px rgba(0, 0, 0, 0.5),
+    0 0 30px rgba(0, 212, 255, 0.8);
 }
 
 @keyframes shake {
@@ -253,7 +255,9 @@ body {
 #game-text.up {
   animation: slideUp 0.6s ease-in-out infinite;
   color: #4caf50;
-  text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.5), 0 0 30px rgba(76, 175, 80, 0.8);
+  text-shadow:
+    4px 4px 0px rgba(0, 0, 0, 0.5),
+    0 0 30px rgba(76, 175, 80, 0.8);
 }
 
 @keyframes slideUp {
@@ -274,7 +278,9 @@ body {
 #game-text.down {
   animation: slideDown 0.6s ease-in-out infinite;
   color: #ff6b6b;
-  text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.5), 0 0 30px rgba(255, 107, 107, 0.8);
+  text-shadow:
+    4px 4px 0px rgba(0, 0, 0, 0.5),
+    0 0 30px rgba(255, 107, 107, 0.8);
 }
 
 @keyframes slideDown {
@@ -295,8 +301,11 @@ body {
 #game-text.gameover {
   animation: gameoverDramatic 1s ease-in-out infinite;
   color: #ff0000;
-  text-shadow: 5px 5px 0px rgba(0, 0, 0, 0.7), 0 0 40px rgba(255, 0, 0, 1),
-    0 0 80px rgba(255, 0, 0, 0.8), 0 0 120px rgba(255, 0, 0, 0.6);
+  text-shadow:
+    5px 5px 0px rgba(0, 0, 0, 0.7),
+    0 0 40px rgba(255, 0, 0, 1),
+    0 0 80px rgba(255, 0, 0, 0.8),
+    0 0 120px rgba(255, 0, 0, 0.6);
   position: relative;
   z-index: 10;
 }
@@ -324,8 +333,11 @@ body {
 #game-text.bingo {
   animation: bingoSpectacular 0.6s ease-in-out infinite;
   color: #ffd700;
-  text-shadow: 5px 5px 0px rgba(0, 0, 0, 0.5), 0 0 50px rgba(255, 215, 0, 1),
-    0 0 100px rgba(255, 215, 0, 0.8), 0 0 150px rgba(255, 215, 0, 0.6);
+  text-shadow:
+    5px 5px 0px rgba(0, 0, 0, 0.5),
+    0 0 50px rgba(255, 215, 0, 1),
+    0 0 100px rgba(255, 215, 0, 0.8),
+    0 0 150px rgba(255, 215, 0, 0.6);
   position: relative;
   z-index: 10;
 }
@@ -375,7 +387,8 @@ body {
 #inputNumber:focus {
   outline: none;
   border-color: #00d4ff;
-  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2),
+  box-shadow:
+    inset 0 2px 4px rgba(0, 0, 0, 0.2),
     0 0 18px rgba(0, 212, 255, 0.7);
 }
 
@@ -390,7 +403,7 @@ body {
   border: 3px solid #2d6b2f;
   cursor: pointer;
   transition: all 0.2s ease;
-  font-family: "Sixtyfour", sans-serif;
+  font-family: 'Sixtyfour', sans-serif;
 }
 
 .go-button:hover {
@@ -417,7 +430,7 @@ body {
   border: 3px solid #c44444;
   cursor: pointer;
   transition: all 0.2s ease;
-  font-family: "Sixtyfour", sans-serif;
+  font-family: 'Sixtyfour', sans-serif;
 }
 
 .reset-button:hover {
@@ -566,7 +579,7 @@ body {
 
 /* 게임오버 배경 어둡게 */
 #gameContainer.gameover-dark::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -621,8 +634,10 @@ body {
   padding: 50px 40px;
   border-radius: 25px;
   border: 6px solid #ff6b6b;
-  box-shadow: 0 0 60px rgba(255, 107, 107, 0.9),
-    0 0 120px rgba(255, 107, 107, 0.5), inset 0 0 40px rgba(255, 107, 107, 0.1);
+  box-shadow:
+    0 0 60px rgba(255, 107, 107, 0.9),
+    0 0 120px rgba(255, 107, 107, 0.5),
+    inset 0 0 40px rgba(255, 107, 107, 0.1);
   text-align: center;
   animation: modalBounceIn 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
@@ -642,11 +657,13 @@ body {
 }
 
 .modal-content h2 {
-  font-family: "Sixtyfour", sans-serif;
+  font-family: 'Sixtyfour', sans-serif;
   color: #fff;
   font-size: 40px;
   margin-bottom: 35px;
-  text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.7), 0 0 30px rgba(255, 255, 255, 0.6);
+  text-shadow:
+    4px 4px 0px rgba(0, 0, 0, 0.7),
+    0 0 30px rgba(255, 255, 255, 0.6);
   animation: modalTextPulse 1.5s ease-in-out infinite;
 }
 
@@ -654,12 +671,14 @@ body {
   0%,
   100% {
     transform: scale(1);
-    text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.7),
+    text-shadow:
+      4px 4px 0px rgba(0, 0, 0, 0.7),
       0 0 30px rgba(255, 255, 255, 0.6);
   }
   50% {
     transform: scale(1.05);
-    text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.7),
+    text-shadow:
+      4px 4px 0px rgba(0, 0, 0, 0.7),
       0 0 50px rgba(255, 255, 255, 0.9);
   }
 }
@@ -671,7 +690,7 @@ body {
 }
 
 .modal-btn {
-  font-family: "Sixtyfour", sans-serif;
+  font-family: 'Sixtyfour', sans-serif;
   font-size: 32px;
   padding: 18px 60px;
   border: 5px solid;
@@ -686,34 +705,46 @@ body {
   background: linear-gradient(135deg, #4caf50, #45a049);
   color: white;
   border-color: #2d6b2f;
-  box-shadow: 0 6px 0 #2d6b2f, 0 10px 20px rgba(0, 0, 0, 0.5);
+  box-shadow:
+    0 6px 0 #2d6b2f,
+    0 10px 20px rgba(0, 0, 0, 0.5);
 }
 
 .yes-btn:hover {
   transform: translateY(-4px);
-  box-shadow: 0 10px 0 #2d6b2f, 0 15px 25px rgba(0, 0, 0, 0.6);
+  box-shadow:
+    0 10px 0 #2d6b2f,
+    0 15px 25px rgba(0, 0, 0, 0.6);
 }
 
 .yes-btn:active {
   transform: translateY(2px);
-  box-shadow: 0 3px 0 #2d6b2f, 0 5px 10px rgba(0, 0, 0, 0.4);
+  box-shadow:
+    0 3px 0 #2d6b2f,
+    0 5px 10px rgba(0, 0, 0, 0.4);
 }
 
 .no-btn {
   background: linear-gradient(135deg, #ff6b6b, #ee5a52);
   color: white;
   border-color: #c44444;
-  box-shadow: 0 6px 0 #c44444, 0 10px 20px rgba(0, 0, 0, 0.5);
+  box-shadow:
+    0 6px 0 #c44444,
+    0 10px 20px rgba(0, 0, 0, 0.5);
 }
 
 .no-btn:hover {
   transform: translateY(-4px);
-  box-shadow: 0 10px 0 #c44444, 0 15px 25px rgba(0, 0, 0, 0.6);
+  box-shadow:
+    0 10px 0 #c44444,
+    0 15px 25px rgba(0, 0, 0, 0.6);
 }
 
 .no-btn:active {
   transform: translateY(2px);
-  box-shadow: 0 3px 0 #c44444, 0 5px 10px rgba(0, 0, 0, 0.4);
+  box-shadow:
+    0 3px 0 #c44444,
+    0 5px 10px rgba(0, 0, 0, 0.4);
 }
 
 /* ===== 모바일 ===== */
@@ -737,7 +768,7 @@ body {
   }
 
   #gameContent {
-    width: 88%;
+    width: 82%;
     padding: 0 8px;
   }
 
@@ -749,7 +780,8 @@ body {
   #startScreen h1 {
     font-size: 3rem;
     line-height: 1.1;
-    text-shadow: 2px 2px 0px rgba(0, 212, 255, 0.6),
+    text-shadow:
+      2px 2px 0px rgba(0, 212, 255, 0.6),
       -2px -2px 0px rgba(255, 107, 214, 0.6);
   }
 
@@ -759,7 +791,9 @@ body {
     padding: 11px 20px;
     border: 3px solid #003d66;
     border-radius: 10px;
-    box-shadow: 0 4px 0 #0066cc, 0 6px 12px rgba(0, 0, 0, 0.4);
+    box-shadow:
+      0 4px 0 #0066cc,
+      0 6px 12px rgba(0, 0, 0, 0.4);
     letter-spacing: 1.5px;
   }
 
@@ -768,11 +802,15 @@ body {
   }
 
   .pixel-button:hover {
-    box-shadow: 0 9px 0 #0066cc, 0 12px 22px rgba(0, 0, 0, 0.5);
+    box-shadow:
+      0 9px 0 #0066cc,
+      0 12px 22px rgba(0, 0, 0, 0.5);
   }
 
   .pixel-button:active {
-    box-shadow: 0 2px 0 #0066cc, 0 4px 8px rgba(0, 0, 0, 0.3);
+    box-shadow:
+      0 2px 0 #0066cc,
+      0 4px 8px rgba(0, 0, 0, 0.3);
   }
 
   #playScreen {
@@ -780,18 +818,21 @@ body {
   }
 
   #game-text {
-    font-size: 55px;
-    min-height: 100px;
-    text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.5),
+    font-size: 28px;
+    min-height: 70px;
+    text-shadow:
+      3px 3px 0px rgba(0, 0, 0, 0.5),
       0 0 28px rgba(255, 255, 255, 0.5);
-    letter-spacing: 6px;
+    letter-spacing: 2px;
+    word-break: break-word;
+    padding: 0 5px;
   }
 
   #game-text.bingo {
-    font-size: 34px !important;
+    font-size: 22px !important;
     animation: bingoSpectacularMobile 0.6s ease-in-out infinite;
     white-space: nowrap;
-    letter-spacing: 1px;
+    letter-spacing: 0px;
   }
 
   @keyframes bingoSpectacularMobile {
@@ -815,27 +856,27 @@ body {
   }
 
   #chance {
-    font-size: 44px !important;
-    margin: 12px 0;
+    font-size: 30px !important;
+    margin: 8px 0;
   }
 
   .inputArea {
     max-width: 100%;
     gap: 0;
-    margin: 15px auto 12px;
+    margin: 10px auto 8px;
   }
 
   #inputNumber {
     width: 100%;
-    max-width: 250px;
-    height: 62px;
-    font-size: 26px !important;
+    max-width: 200px;
+    height: 52px;
+    font-size: 22px !important;
     border-radius: 9px;
     padding: 0 9px;
   }
 
   #inputNumber::placeholder {
-    font-size: 24px !important;
+    font-size: 20px !important;
   }
 
   .go-button,
@@ -845,18 +886,18 @@ body {
 
   .button-container {
     display: flex;
-    gap: 14px;
+    gap: 12px;
     justify-content: center;
     align-items: center;
-    margin-top: 22px;
+    margin-top: 14px;
   }
 
   .button-container .go-button-circle {
     display: flex;
-    width: 74px;
-    height: 74px;
+    width: 62px;
+    height: 62px;
     border-radius: 50%;
-    font-size: 28px;
+    font-size: 24px;
     padding: 0;
     align-items: center;
     justify-content: center;
@@ -864,29 +905,35 @@ body {
     background: linear-gradient(135deg, #4caf50, #45a049);
     color: white;
     border: 3px solid #2d6b2f;
-    box-shadow: 0 4px 0 #2d6b2f, 0 7px 14px rgba(0, 0, 0, 0.3);
+    box-shadow:
+      0 4px 0 #2d6b2f,
+      0 7px 14px rgba(0, 0, 0, 0.3);
     transition: all 0.2s ease;
-    font-family: "Sixtyfour", sans-serif;
+    font-family: 'Sixtyfour', sans-serif;
     flex-shrink: 0;
     cursor: pointer;
   }
 
   .button-container .go-button-circle:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 0 #2d6b2f, 0 10px 18px rgba(0, 0, 0, 0.4);
+    box-shadow:
+      0 6px 0 #2d6b2f,
+      0 10px 18px rgba(0, 0, 0, 0.4);
   }
 
   .button-container .go-button-circle:active {
     transform: translateY(2px);
-    box-shadow: 0 2px 0 #2d6b2f, 0 4px 8px rgba(0, 0, 0, 0.3);
+    box-shadow:
+      0 2px 0 #2d6b2f,
+      0 4px 8px rgba(0, 0, 0, 0.3);
   }
 
   .button-container .reset-button-circle {
     display: flex;
-    width: 74px;
-    height: 74px;
+    width: 62px;
+    height: 62px;
     border-radius: 50%;
-    font-size: 34px;
+    font-size: 24px;
     padding: 0;
     margin-top: 0;
     align-items: center;
@@ -895,19 +942,25 @@ body {
     background: linear-gradient(135deg, #ff6b6b, #ee5a52);
     color: white;
     border: 3px solid #c44444;
-    box-shadow: 0 4px 0 #c44444, 0 7px 14px rgba(0, 0, 0, 0.3);
+    box-shadow:
+      0 4px 0 #c44444,
+      0 7px 14px rgba(0, 0, 0, 0.3);
     cursor: pointer;
     transition: all 0.2s ease;
   }
 
   .button-container .reset-button-circle:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 0 #c44444, 0 10px 18px rgba(0, 0, 0, 0.4);
+    box-shadow:
+      0 6px 0 #c44444,
+      0 10px 18px rgba(0, 0, 0, 0.4);
   }
 
   .button-container .reset-button-circle:active {
     transform: translateY(2px);
-    box-shadow: 0 2px 0 #c44444, 0 4px 8px rgba(0, 0, 0, 0.3);
+    box-shadow:
+      0 2px 0 #c44444,
+      0 4px 8px rgba(0, 0, 0, 0.3);
   }
 
   /* 모바일 모달 */
@@ -948,7 +1001,7 @@ body {
     height: 90vh;
   }
   #gameContent {
-    width: 58%;
+    width: 50%;
     max-width: 700px;
     padding: 0 12px;
   }
@@ -961,7 +1014,8 @@ body {
   #startScreen h1 {
     font-size: clamp(4.5rem, 4.8vw, 5.5rem);
     line-height: 1.18;
-    text-shadow: 2px 2px 0px rgba(0, 212, 255, 0.6),
+    text-shadow:
+      2px 2px 0px rgba(0, 212, 255, 0.6),
       -2px -2px 0px rgba(255, 107, 214, 0.6);
   }
 
@@ -970,7 +1024,9 @@ body {
     padding: 13px 40px;
     border: 3px solid #003d66;
     border-radius: 11px;
-    box-shadow: 0 4px 0 #0066cc, 0 7px 14px rgba(0, 0, 0, 0.4);
+    box-shadow:
+      0 4px 0 #0066cc,
+      0 7px 14px rgba(0, 0, 0, 0.4);
     letter-spacing: 2px;
   }
 
@@ -979,43 +1035,50 @@ body {
   }
 
   .pixel-button:hover {
-    box-shadow: 0 9px 0 #0066cc, 0 12px 22px rgba(0, 0, 0, 0.5);
+    box-shadow:
+      0 9px 0 #0066cc,
+      0 12px 22px rgba(0, 0, 0, 0.5);
   }
 
   .pixel-button:active {
-    box-shadow: 0 2px 0 #0066cc, 0 4px 8px rgba(0, 0, 0, 0.3);
+    box-shadow:
+      0 2px 0 #0066cc,
+      0 4px 8px rgba(0, 0, 0, 0.3);
   }
 
   #game-text {
-    font-size: 68px !important;
-    min-height: 110px;
-    text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.5),
+    font-size: 36px !important;
+    min-height: 80px;
+    text-shadow:
+      3px 3px 0px rgba(0, 0, 0, 0.5),
       0 0 28px rgba(255, 255, 255, 0.5);
-    letter-spacing: 8px;
+    letter-spacing: 3px;
+    word-break: break-word;
+    padding: 0 5px;
   }
 
   #chance {
-    font-size: 45px !important;
+    font-size: 36px !important;
     margin: 13px 0;
   }
 
   .inputArea {
     max-width: 100%;
     gap: 0;
-    margin: 16px auto 14px;
+    margin: 12px auto 10px;
   }
 
   #inputNumber {
     width: 100%;
-    max-width: 270px;
-    height: 64px;
-    font-size: 26px !important;
+    max-width: 220px;
+    height: 54px;
+    font-size: 22px !important;
     border-radius: 9px;
     padding: 0 9px;
   }
 
   #inputNumber::placeholder {
-    font-size: 24px !important;
+    font-size: 20px !important;
   }
 
   .go-button,
@@ -1025,18 +1088,18 @@ body {
 
   .button-container {
     display: flex;
-    gap: 16px;
+    gap: 12px;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 14px;
   }
 
   .button-container .go-button-circle {
     display: flex;
-    width: 76px;
-    height: 76px;
+    width: 62px;
+    height: 62px;
     border-radius: 50%;
-    font-size: 30px;
+    font-size: 24px;
     padding: 0;
     align-items: center;
     justify-content: center;
@@ -1044,29 +1107,35 @@ body {
     background: linear-gradient(135deg, #4caf50, #45a049);
     color: white;
     border: 3px solid #2d6b2f;
-    box-shadow: 0 4px 0 #2d6b2f, 0 7px 14px rgba(0, 0, 0, 0.3);
+    box-shadow:
+      0 4px 0 #2d6b2f,
+      0 7px 14px rgba(0, 0, 0, 0.3);
     transition: all 0.2s ease;
-    font-family: "Sixtyfour", sans-serif;
+    font-family: 'Sixtyfour', sans-serif;
     flex-shrink: 0;
     cursor: pointer;
   }
 
   .button-container .go-button-circle:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 0 #2d6b2f, 0 10px 18px rgba(0, 0, 0, 0.4);
+    box-shadow:
+      0 6px 0 #2d6b2f,
+      0 10px 18px rgba(0, 0, 0, 0.4);
   }
 
   .button-container .go-button-circle:active {
     transform: translateY(2px);
-    box-shadow: 0 2px 0 #2d6b2f, 0 4px 8px rgba(0, 0, 0, 0.3);
+    box-shadow:
+      0 2px 0 #2d6b2f,
+      0 4px 8px rgba(0, 0, 0, 0.3);
   }
 
   .button-container .reset-button-circle {
     display: flex;
-    width: 76px;
-    height: 76px;
+    width: 62px;
+    height: 62px;
     border-radius: 50%;
-    font-size: 36px;
+    font-size: 24px;
     padding: 0;
     margin-top: 0;
     align-items: center;
@@ -1074,19 +1143,25 @@ body {
     background: linear-gradient(135deg, #ff6b6b, #ee5a52);
     color: white;
     border: 3px solid #c44444;
-    box-shadow: 0 4px 0 #c44444, 0 7px 14px rgba(0, 0, 0, 0.3);
+    box-shadow:
+      0 4px 0 #c44444,
+      0 7px 14px rgba(0, 0, 0, 0.3);
     cursor: pointer;
     transition: all 0.2s ease;
   }
 
   .button-container .reset-button-circle:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 0 #c44444, 0 10px 18px rgba(0, 0, 0, 0.4);
+    box-shadow:
+      0 6px 0 #c44444,
+      0 10px 18px rgba(0, 0, 0, 0.4);
   }
 
   .button-container .reset-button-circle:active {
     transform: translateY(2px);
-    box-shadow: 0 2px 0 #c44444, 0 4px 8px rgba(0, 0, 0, 0.3);
+    box-shadow:
+      0 2px 0 #c44444,
+      0 4px 8px rgba(0, 0, 0, 0.3);
   }
 
   /* 태블릿 모달 */
@@ -1136,7 +1211,8 @@ body {
   #startScreen h1 {
     font-size: 6rem;
     line-height: 1.18;
-    text-shadow: 4px 4px 0px rgba(0, 212, 255, 0.6),
+    text-shadow:
+      4px 4px 0px rgba(0, 212, 255, 0.6),
       -3px -3px 0px rgba(255, 107, 214, 0.6);
   }
 
@@ -1145,7 +1221,9 @@ body {
     padding: 20px 75px;
     border: 5px solid #003d66;
     border-radius: 17px;
-    box-shadow: 0 9px 0 #0066cc, 0 14px 23px rgba(0, 0, 0, 0.4);
+    box-shadow:
+      0 9px 0 #0066cc,
+      0 14px 23px rgba(0, 0, 0, 0.4);
     letter-spacing: 4px;
   }
 
@@ -1154,17 +1232,22 @@ body {
   }
 
   .pixel-button:hover {
-    box-shadow: 0 16px 0 #0066cc, 0 22px 34px rgba(0, 0, 0, 0.5);
+    box-shadow:
+      0 16px 0 #0066cc,
+      0 22px 34px rgba(0, 0, 0, 0.5);
   }
 
   .pixel-button:active {
-    box-shadow: 0 2px 0 #0066cc, 0 4px 8px rgba(0, 0, 0, 0.3);
+    box-shadow:
+      0 2px 0 #0066cc,
+      0 4px 8px rgba(0, 0, 0, 0.3);
   }
 
   #game-text {
     font-size: 50px !important;
     min-height: 180px;
-    text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.5),
+    text-shadow:
+      3px 3px 0px rgba(0, 0, 0, 0.5),
       0 0 28px rgba(255, 255, 255, 0.5);
     letter-spacing: 10px;
   }
@@ -1199,15 +1282,21 @@ body {
     font-size: 30px !important;
     border-radius: 9px;
     flex-shrink: 0;
-    box-shadow: 0 4px 0 #2d6b2f, 0 7px 14px rgba(0, 0, 0, 0.3);
+    box-shadow:
+      0 4px 0 #2d6b2f,
+      0 7px 14px rgba(0, 0, 0, 0.3);
   }
 
   .go-button:hover {
-    box-shadow: 0 6px 0 #2d6b2f, 0 10px 18px rgba(0, 0, 0, 0.4);
+    box-shadow:
+      0 6px 0 #2d6b2f,
+      0 10px 18px rgba(0, 0, 0, 0.4);
   }
 
   .go-button:active {
-    box-shadow: 0 2px 0 #2d6b2f, 0 4px 8px rgba(0, 0, 0, 0.3);
+    box-shadow:
+      0 2px 0 #2d6b2f,
+      0 4px 8px rgba(0, 0, 0, 0.3);
   }
 
   .reset-button {
@@ -1217,14 +1306,20 @@ body {
     font-size: 30px !important;
     margin-top: 18px;
     border-radius: 9px;
-    box-shadow: 0 4px 0 #c44444, 0 7px 14px rgba(0, 0, 0, 0.3);
+    box-shadow:
+      0 4px 0 #c44444,
+      0 7px 14px rgba(0, 0, 0, 0.3);
   }
 
   .reset-button:hover {
-    box-shadow: 0 6px 0 #c44444, 0 10px 18px rgba(0, 0, 0, 0.4);
+    box-shadow:
+      0 6px 0 #c44444,
+      0 10px 18px rgba(0, 0, 0, 0.4);
   }
 
   .reset-button:active {
-    box-shadow: 0 2px 0 #c44444, 0 4px 8px rgba(0, 0, 0, 0.3);
+    box-shadow:
+      0 2px 0 #c44444,
+      0 4px 8px rgba(0, 0, 0, 0.3);
   }
 }
